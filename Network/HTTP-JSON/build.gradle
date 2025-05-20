@@ -1,16 +1,24 @@
-// set as java application
-apply plugin: 'application'
-
-//define main class
-mainClassName = 'API'
-
-repositories {
-  mavenCentral()
+plugins {
+    id 'java'
+    id 'application'
 }
 
-dependencies{
-  implementation 'org.json:json:20171018' // org.json
-  implementation 'com.google.code.gson:gson:2.8.6' // Google JSON
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(22)
+    }
+}
+
+dependencies {
+    implementation 'org.json:json:20240303'
+}
+
+application {
+    mainClass = 'API'
+}
+
+repositories {
+    mavenCentral()
 }
 
 task API(type: JavaExec) {

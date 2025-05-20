@@ -9,6 +9,29 @@
 // Also run 'gradle tasks --all' to see what the groups and description part does
 
 // gradle task
+plugins {
+    id 'java'
+    id 'application'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(22)
+    }
+}
+
+application {
+    mainClass = 'API'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.json:json:20230227'
+}
+
 task('task1') {
      group = "Just a task"
      description = "Shows how doFirst and doLast works"

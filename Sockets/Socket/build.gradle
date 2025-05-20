@@ -2,22 +2,24 @@ apply plugin: 'java'
 
 description = "Client Server Socket Example"
 
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.json:json:20240303'
+}
+
 task runClient(type: JavaExec) {
-  classpath = sourceSets.main.runtimeClasspath
-  description = "Run Client"
-  main = 'SockClient'
-  // default args
-  args 'localhost' // host
-  args '8888' // port
-  args '10' // int value to write
-  args '20' // int value to write
+    classpath = sourceSets.main.runtimeClasspath
+    description = "Run Client"
+    main = 'SockClient'
+    args 'localhost', '8888', '10', '20'
 }
 
 task runServer(type: JavaExec) {
-  classpath = sourceSets.main.runtimeClasspath
-  description = "Run Server"
-  main = 'SockServer'
-  // default args
-  args '8888' // port
-  args '10000' // sleep delay
+    classpath = sourceSets.main.runtimeClasspath
+    description = "Run Server"
+    main = 'SockServer'
+    args '8888', '10000'
 }
