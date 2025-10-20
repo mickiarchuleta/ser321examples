@@ -13,7 +13,11 @@ import java.io.*;
  * @modified-by Kevin Moore <klmoor21@asu.edu> February 2021
  */
 public class SockServer {
-  public static void main (String args[]) {
+  public static void main (String args[]) throws Exception {
+    int port = 8888;
+    ServerSocket serv = new ServerSocket(port, 50, InetAddress.getByName("0.0.0.0"));
+    System.out.println("Server ready for a connection (port " + port + ")");
+
     Socket sock = null;
     Boolean connected = false;
     ObjectInputStream in = null;
@@ -23,7 +27,7 @@ public class SockServer {
     Integer receivedInt = 0;
     try {
         //open socket
-        ServerSocket serv = new ServerSocket(3333); // create server socket on port 8888
+        serv = new ServerSocket(8888); // create server socket on port 8888
         System.out.println("Server ready for a connection");
         
         //loop infinitely to get a connection and exchange messages
