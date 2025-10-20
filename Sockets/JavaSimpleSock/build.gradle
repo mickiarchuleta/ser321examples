@@ -14,7 +14,7 @@ task SocketServer(type: JavaExec) {
   main = 'SockServer'
 }
 
-task SocketClient(type: JavaExec) {
+task SockClient(type: JavaExec) {
   group 'TCP Server/Client'
   description 'Creates client socket sends a message and number to server'
 
@@ -22,4 +22,12 @@ task SocketClient(type: JavaExec) {
 
   main = 'SockClient'
   standardInput = System.in
+}
+
+tasks.named('SockClient', JavaExec).configure {
+    // allow passing -Pargs="host port"
+    if (project.hasProperty('args')) {
+        args project.args.split('\\s+')
+    }
+    mainClass.set('SockClient')
 }
