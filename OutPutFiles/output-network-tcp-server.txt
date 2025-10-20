@@ -1,0 +1,7 @@
+Reusing configuration cache.
+> Task :Network:processResources NO-SOURCE
+> Task :Network:compileJava
+> Task :Network:classes
+> Task :Network:run
+Read hello
+Read goodbye

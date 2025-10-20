@@ -1,0 +1,12 @@
+Reusing configuration cache.
+> Task :Sockets:processResources NO-SOURCE
+> Task :Sockets:compileJava UP-TO-DATE
+> Task :Sockets:classes UP-TO-DATE
+
+> Task :Sockets:run
+Server ready for connections
+Server waiting for a connection
+Server connected to client
+read from client: hello
+Socket Closed.
+Server waiting for a connection

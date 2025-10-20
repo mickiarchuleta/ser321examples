@@ -1,0 +1,29 @@
+Calculating task graph as no cached configuration is available for tasks: :Network:tasks
+
+> Task :Network:tasks
+
+------------------------------------------------------------
+Tasks runnable from project ':Network'
+------------------------------------------------------------
+
+Help tasks
+----------
+artifactTransforms - Displays the Artifact Transforms that can be executed in project ':Network'.
+buildEnvironment - Displays all buildscript dependencies declared in project ':Network'.
+dependencies - Displays all dependencies declared in project ':Network'.
+dependencyInsight - Displays the insight into a specific dependency in project ':Network'.
+help - Displays a help message.
+javaToolchains - Displays the detected java toolchains.
+outgoingVariants - Displays the outgoing variants of project ':Network'.
+projects - Displays the sub-projects of project ':Network'.
+properties - Displays the properties of project ':Network'.
+resolvableConfigurations - Displays the configurations that can be resolved in project ':Network'.
+tasks - Displays the tasks runnable from project ':Network'.
+
+To see all tasks and more detail, run gradlew tasks --all
+
+To see more detail about a task, run gradlew help --task <task>
+
+BUILD SUCCESSFUL in 260ms
+1 actionable task: 1 executed
+Configuration cache entry stored.

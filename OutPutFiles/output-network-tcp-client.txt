@@ -1,0 +1,22 @@
+Calculating task graph as no cached configuration is available for tasks: :Network:run --args=localhost 9200 hello
+> Task :Network:processResources NO-SOURCE
+> Task :Network:compileJava
+> Task :Network:classes
+
+> Task :Network:run
+Received: hello
+
+BUILD SUCCESSFUL in 417ms
+2 actionable tasks: 2 executed
+Configuration cache entry stored.
+Calculating task graph as no cached configuration is available for tasks: :Network:run --args=localhost 9200 goodbye
+> Task :Network:processResources NO-SOURCE
+> Task :Network:compileJava UP-TO-DATE
+> Task :Network:classes UP-TO-DATE
+
+> Task :Network:run
+Received: goodbye
+
+BUILD SUCCESSFUL in 366ms
+2 actionable tasks: 1 executed, 1 up-to-date
+Configuration cache entry stored.

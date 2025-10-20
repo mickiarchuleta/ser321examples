@@ -1,0 +1,19 @@
+Calculating task graph as configuration cache cannot be reused because file 'Serialization/build.gradle' has changed.
+> Task :Serialization:processResources NO-SOURCE
+> Task :Serialization:compileJava
+> Task :Serialization:classes
+
+> Task :Serialization:run
+Group: Administration has users: Tim, Joe, Sue, 
+Administration group as json string: {"Joe":{"userPwd":"joeWord","userId":"Joe"},"Sue":{"userPwd":"sueWord","userId":"Sue"},"name":"Administration","Tim":{"userPwd":"timWord","userId":"Tim"}}
+Done exporting group in json to admin.json
+Importing group from admin.json
+names are: Joe, Sue, name, Tim, 
+Group: Administration has users: Joe, Sue, Tim, 
+Used Java serialization of the group to admin.ser
+Done importing the group from admin.ser as:
+Group: Administration has users: Tim, Joe, Sue, 
+
+BUILD SUCCESSFUL in 1s
+2 actionable tasks: 2 executed
+Configuration cache entry stored.

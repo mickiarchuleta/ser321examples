@@ -1,0 +1,5 @@
+Connected to server at localhost:9100
+String to send> String to send:hello
+Received from server: hello
+
+String to send> 

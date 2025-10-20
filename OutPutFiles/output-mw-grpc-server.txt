@@ -1,0 +1,9 @@
+> Task :Middleware:extractIncludeProto UP-TO-DATE
+> Task :Middleware:generateProto UP-TO-DATE
+> Task :Middleware:compileJava
+> Task :Middleware:processResources UP-TO-DATE
+> Task :Middleware:classes
+
+> Task :Middleware:run
+Server running ...
+Received from client: hello world

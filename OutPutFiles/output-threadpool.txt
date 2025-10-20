@@ -1,0 +1,36 @@
+Reusing configuration cache.
+> Task :Threads:processResources NO-SOURCE
+> Task :Threads:compileJava UP-TO-DATE
+> Task :Threads:classes UP-TO-DATE
+
+> Task :Threads:run
+Hello from 0 loop=0
+Hello from 0 loop=1
+Hello from 0 loop=2
+Hello from 0 loop=3
+Hello from 0 loop=4
+Hello from 1 loop=0
+Hello from 1 loop=1
+Hello from 1 loop=2
+Hello from 1 loop=3
+Hello from 1 loop=4
+Hello from 2 loop=0
+Hello from 2 loop=1
+Hello from 2 loop=2
+Hello from 2 loop=3
+Hello from 2 loop=4
+Hello from 3 loop=0
+Hello from 3 loop=1
+Hello from 3 loop=2
+Hello from 3 loop=3
+Hello from 3 loop=4
+Hello from 4 loop=0
+Hello from 4 loop=1
+Hello from 4 loop=2
+Hello from 4 loop=3
+Hello from 4 loop=4
+Hello from 5 loop=0
+Hello from 5 loop=1
+Hello from 5 loop=2
+Hello from 5 loop=3
+Hello from 5 loop=4

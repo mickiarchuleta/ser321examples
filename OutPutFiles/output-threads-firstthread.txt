@@ -1,0 +1,11 @@
+Calculating task graph as no cached configuration is available for tasks: :Threads:run
+> Task :Threads:processResources NO-SOURCE
+> Task :Threads:compileJava
+> Task :Threads:classes
+
+> Task :Threads:run
+Expected Arguments: <repeat(int)> <sleep(int)>
+
+BUILD SUCCESSFUL in 597ms
+2 actionable tasks: 2 executed
+Configuration cache entry stored.

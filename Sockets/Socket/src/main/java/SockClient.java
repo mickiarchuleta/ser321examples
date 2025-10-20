@@ -7,7 +7,7 @@ class SockClient {
         OutputStream    out = null;
         InputStream     in = null;
         int i1=0, i2=0;
-        int port = 9099; // default port
+        int port = 8888; // default port
 
         if (args.length != 4) {
             System.out.println("Expected arguments: <host(String)> <port(int)> <value1(int)> <value2(int)>");
