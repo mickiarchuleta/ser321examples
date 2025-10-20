@@ -10,7 +10,7 @@ java {
 }
 
 application {
-    mainClass = 'Multiply'
+    mainClass = (project.findProperty("mainClass") ?: 'Multiply') as String
 }
 
 repositories {
@@ -32,7 +32,8 @@ tasks.register('runApp', JavaExec) {
 }
 
 // Multiply with custom or default args
-tasks.register('runAppAgain', JavaExec) {
+    Pass  args via: -PmulArg-'3 4" */
+tasks.register('runAppAgain', JavaExec) 
     group = 'Multiply tasks'
     description = 'Runs Multiply with optional parameters'
 
