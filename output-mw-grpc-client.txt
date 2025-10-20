@@ -1,0 +1,4 @@
+Received from server: hello world
+Add first number (0 to exit): Add second number: result: 4
+
+Add first number (0 to exit): 

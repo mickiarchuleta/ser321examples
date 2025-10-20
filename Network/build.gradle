@@ -1,0 +1,32 @@
+plugins {
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+java {
+    toolchain { languageVersion = JavaLanguageVersion.of(22) }
+}
+
+/* Which sources to compile at run time. Default to tcp example. */
+def srcDirProp = (findProperty('srcDir') ?: 'tcp/src/main/java') as String
+
+sourceSets {
+    main {
+        java.srcDirs = [ srcDirProp ]
+    }
+}
+
+/* Main class to run; default to TCPServer. Override with -PmainClass=... */
+def mainClassProp = (findProperty('mainClass') ?: 'TCPServer') as String
+
+application {
+    mainClass = mainClassProp
+}
+
+/* Allow interactive input (if a sample reads from stdin) */
+tasks.withType(JavaExec).configureEach {
+    standardInput = System.in
+}

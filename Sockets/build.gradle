@@ -1,0 +1,30 @@
+plugins {
+    id 'application'
+}
+
+repositories { mavenCentral() }
+
+java {
+    toolchain { languageVersion = JavaLanguageVersion.of(22) }
+}
+
+/* Choose which sources to compile at run time.
+ * Default to Echo_Java if you don't pass -PsrcDir.
+ */
+def srcDirProp = (findProperty('srcDir') ?: 'Echo_Java/src/main/java') as String
+
+sourceSets {
+    main { java.srcDirs = [ srcDirProp ] }
+}
+
+/* Choose main class at run time; default to Client. */
+def mainClassProp = (findProperty('mainClass') ?: 'Client') as String
+
+application {
+    mainClass = mainClassProp
+}
+
+/* Allow interactive input when a sample reads from stdin */
+tasks.withType(JavaExec).configureEach {
+    standardInput = System.in
+}

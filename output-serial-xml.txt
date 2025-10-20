@@ -1,0 +1,14 @@
+Calculating task graph as configuration cache cannot be reused because the set of Gradle properties has changed: the values of 'mainClass' and 'srcDir' were changed.
+> Task :Serialization:processResources NO-SOURCE
+> Task :Serialization:compileJava
+> Task :Serialization:classes
+
+> Task :Serialization:run
+Ready to export a user
+Done exporting a user as xml to user.xml
+Importing a user as xml from user.xml
+Read user: I AM
+
+BUILD SUCCESSFUL in 407ms
+2 actionable tasks: 2 executed
+Configuration cache entry stored.

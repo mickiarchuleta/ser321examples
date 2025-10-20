@@ -1,0 +1,12 @@
+Reusing configuration cache.
+> Task :Sockets:processResources NO-SOURCE
+> Task :Sockets:compileJava
+> Task :Sockets:classes
+
+> Task :Sockets:run
+Please enter a String to send to the Server (enter "exit" to quit"): Please enter a Number to send to the Server (enter 0 to quit"): 63 and SimpleSock ... Got it!
+Please enter a String to send to the Server (enter "exit" to quit"): Please enter a Number to send to the Server (enter 0 to quit"): exiting
+
+BUILD SUCCESSFUL in 1m 6s
+2 actionable tasks: 2 executed
+Configuration cache entry reused.

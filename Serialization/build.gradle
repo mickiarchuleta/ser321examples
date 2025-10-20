@@ -1,0 +1,24 @@
+plugins { id 'application' }
+
+repositories { mavenCentral() }
+
+java {
+    toolchain { languageVersion = JavaLanguageVersion.of(22) }
+}
+
+/* Choose which sources to compile at run time (default to GroupJson) */
+def srcDirProp    = (findProperty('srcDir')    ?: 'GroupJson/src/main/java') as String
+def mainClassProp = (findProperty('mainClass') ?: 'GroupFileSerialize')      as String
+
+sourceSets { main { java.srcDirs = [ srcDirProp ] } }
+
+application { mainClass = mainClassProp }
+
+/* Needed by GroupJson (org.json.*) */
+dependencies {
+    implementation 'org.json:json:20240303'
+}
+
+tasks.withType(JavaExec).configureEach {
+    standardInput = System.in
+}

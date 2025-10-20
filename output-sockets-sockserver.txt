@@ -1,0 +1,13 @@
+Reusing configuration cache.
+> Task :Sockets:processResources NO-SOURCE
+> Task :Sockets:compileJava
+> Task :Sockets:classes
+
+> Task :Sockets:run
+Server ready for a connection
+Server waiting for a connection
+Received the String SimpleSock
+Received the Integer 63
+Received the String goodbye
+Received the Integer 0
+Server waiting for a connection

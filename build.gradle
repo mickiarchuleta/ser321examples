@@ -1,0 +1,21 @@
+plugins {
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+java {
+    toolchain { languageVersion = JavaLanguageVersion.of(22) }
+}
+
+sourceSets {
+    main {
+        java.srcDirs = ['Echo_Java/src/main/java']
+    }
+}
+
+application {
+    mainClass = providers.gradleProperty("mainClass").orElse("Client")
+}

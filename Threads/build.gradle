@@ -1,0 +1,10 @@
+plugins { id 'application' }
+repositories { mavenCentral() }
+java { toolchain { languageVersion = JavaLanguageVersion.of(22) } }
+
+def srcDirProp = (findProperty('srcDir') ?: 'src/main/java') as String
+sourceSets { main { java.srcDirs = [ srcDirProp ] } }
+
+application { mainClass = (findProperty('mainClass') ?: 'Main') as String }
+
+tasks.withType(JavaExec).configureEach { standardInput = System.in }

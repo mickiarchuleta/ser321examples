@@ -1,0 +1,35 @@
+Calculating task graph as configuration cache cannot be reused because JVM has changed.
+> Task :Threads:processResources NO-SOURCE
+> Task :Threads:compileJava
+> Task :Threads:classes
+
+> Task :Threads:run
+Hello from 3 loop=0
+Hello from 2 loop=0
+Hello from 1 loop=0
+Hello from 4 loop=0
+Hello from 0 loop=0
+Hello from 0 loop=1
+Hello from 0 loop=2
+Hello from 0 loop=3
+Hello from 0 loop=4
+Hello from 1 loop=1
+Hello from 2 loop=1
+Hello from 1 loop=2
+Hello from 3 loop=1
+Hello from 1 loop=3
+Hello from 2 loop=2
+Hello from 4 loop=1
+Hello from 1 loop=4
+Hello from 2 loop=3
+Hello from 3 loop=2
+Hello from 4 loop=2
+Hello from 2 loop=4
+Hello from 3 loop=3
+Hello from 4 loop=3
+Hello from 3 loop=4
+Hello from 4 loop=4
+
+BUILD SUCCESSFUL in 4s
+2 actionable tasks: 2 executed
+Configuration cache entry stored.

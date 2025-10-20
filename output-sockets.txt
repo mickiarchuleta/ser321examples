@@ -1,0 +1,29 @@
+Calculating task graph as no cached configuration is available for tasks: :Sockets:task
+
+> Task :Sockets:tasks
+
+------------------------------------------------------------
+Tasks runnable from project ':Sockets'
+------------------------------------------------------------
+
+Help tasks
+----------
+artifactTransforms - Displays the Artifact Transforms that can be executed in project ':Sockets'.
+buildEnvironment - Displays all buildscript dependencies declared in project ':Sockets'.
+dependencies - Displays all dependencies declared in project ':Sockets'.
+dependencyInsight - Displays the insight into a specific dependency in project ':Sockets'.
+help - Displays a help message.
+javaToolchains - Displays the detected java toolchains.
+outgoingVariants - Displays the outgoing variants of project ':Sockets'.
+projects - Displays the sub-projects of project ':Sockets'.
+properties - Displays the properties of project ':Sockets'.
+resolvableConfigurations - Displays the configurations that can be resolved in project ':Sockets'.
+tasks - Displays the tasks runnable from project ':Sockets'.
+
+To see all tasks and more detail, run gradlew tasks --all
+
+To see more detail about a task, run gradlew help --task <task>
+
+BUILD SUCCESSFUL in 243ms
+1 actionable task: 1 executed
+Configuration cache entry stored.
