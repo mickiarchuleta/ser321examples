@@ -34,3 +34,9 @@ task SocketClient(type: JavaExec) {
     args(project.getProperty('host'));
   } 
 }
+
+tasks.named("SocketClient", JavaExec).configure {
+    if (project.hasProperty("args")) {
+        args project.args.split("\\s+")
+    }
+}
