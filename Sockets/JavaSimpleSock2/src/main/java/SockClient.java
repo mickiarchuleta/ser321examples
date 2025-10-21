@@ -14,9 +14,9 @@ import java.io.*;
 class SockClient {
   public static void main (String args[]) {
     Socket sock = null;
-    String host = "localhost";
-    String message = "HI";
-    Integer number = 100;
+    String host = (args.length > 0) ? args[0] : "localhost";
+    int    port = (args.length > 1) ? Integer.parseInt(args[1]) : 3333;String message = (args.length > 2) ? args[2] : "HI";
+    int    number  = (args.length > 3) ? Integer.parseInt(args[3]) : 100;
 
     // works with no inputs or 1, 2 or 3
     // no error handling for wrong arguments
