@@ -5,7 +5,8 @@ class SockServer {
     public static void main (String args[]) throws Exception {
 
         int count = 0;
-        ServerSocket    serv = new ServerSocket(8888);
+        
+        ServerSocket serv = new ServerSocket(3333);
 
         Socket sock = serv.accept();
 
